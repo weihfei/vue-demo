@@ -13,8 +13,12 @@
        <div v-for="(item, index) in contents" :key="index" class="content-item">
          {{ item }}
        </div>
-       </div>
     </div>
+
+    <q class="q-style">
+      你好
+    </q>
+
   </div>
 </template>
 
@@ -61,5 +65,18 @@ export default class Home extends Vue {
     flex-grow: 3;
  }
 
+.q-style{
+  quotes: '我就是测试一下quote属性：""';
+}
+
+.q-style::before{
+  content: '测试内容';
+  border-bottom: 1px solid #cccccc;
+  width: 500px;
+}
+
+.q-style::after{
+  content:close-quote;
+}
 </style>
 
