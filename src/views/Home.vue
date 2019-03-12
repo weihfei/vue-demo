@@ -54,11 +54,11 @@ export default class Home extends Vue {
  
  .content-item{
     box-sizing: border-box;
-    // flex-basis: 100px;
+    flex-basis: 100px;
     border:1px solid #cccccc;
     padding: 15px;
     margin: 10px;
-    flex-grow: 1;
+    flex-grow: 3;
  }
 
 </style>
