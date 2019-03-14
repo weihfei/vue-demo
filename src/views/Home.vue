@@ -19,6 +19,17 @@
       你好
     </q>
 
+    <div class="count">
+      <div>测试css计数器</div>
+      <div>测试css计数器</div>
+      <div class="count">
+        <div>测试css计数器</div>
+        <div>测试css计数器</div>
+        <div>测试css计数器</div>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
@@ -75,8 +86,16 @@ export default class Home extends Vue {
   width: 500px;
 }
 
-.q-style::after{
-  content:close-quote;
+.count{
+  counter-reset: testcounter;
+  font-size: 30px;
 }
+
+.count>div::before{
+  content: counters(testcounter,'.');
+  counter-increment: testcounter;
+
+}
+
 </style>
 
