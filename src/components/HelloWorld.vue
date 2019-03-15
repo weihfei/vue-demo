@@ -10,8 +10,6 @@ import { Component, Prop, Vue, Emit } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
-
-  
 }
 
 </script>

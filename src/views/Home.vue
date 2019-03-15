@@ -29,6 +29,9 @@
       </div>
     </div>
 
+    <h2>
+      {{urlLinkAPI}}
+    </h2>
 
   </div>
 </template>
@@ -46,9 +49,8 @@ export default class Home extends Vue {
 
  public testValue = 1;
  public content = '内容显示';
- public contents = [
-   'TOM','HURRY','JONE','PIPEN','JORDEN'
- ]
+ public contents = ['TOM', 'HURRY', 'JONE', 'PIPEN', 'JORDEN'];
+ public urlLinkAPI = process.env.VUE_APP_DEV_API;
 
  public addNum() {
   this.testValue++;
