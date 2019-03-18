@@ -1,10 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <router-link to="/toDoList">toDoList</router-link>
+    </div> -->
+    <h1>To Do List</h1>
+    <div class="content-box">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -25,5 +29,19 @@
       color: #42b983;
     }
   }
+}
+
+h1{
+  margin: 50px auto 0;
+  font-size: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
+  color: #7e7e7e;
+}
+
+.content-box{
+  width: 80%;
+  margin: 20px auto 0;
 }
 </style>

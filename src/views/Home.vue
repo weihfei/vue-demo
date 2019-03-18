@@ -5,7 +5,7 @@
       {{ testValue }}
     </div>
     <div>
-      <button type="button" onclcik="addNum()">测试按钮事件</button>
+      <button type="button" v-on:click="addNum()">测试按钮事件</button>
     </div>
     <div>{{content}}</div>
 
@@ -33,6 +33,11 @@
       {{urlLinkAPI}}
     </h2>
 
+    <div>
+      <input type="text" v-model="inputContent"> 输入内容{{inputContent}}
+    </div>
+    
+
   </div>
 </template>
 
@@ -51,6 +56,7 @@ export default class Home extends Vue {
  public content = '内容显示';
  public contents = ['TOM', 'HURRY', 'JONE', 'PIPEN', 'JORDEN'];
  public urlLinkAPI = process.env.VUE_APP_DEV_API;
+ public inputContent = '';
 
  public addNum() {
   this.testValue++;
