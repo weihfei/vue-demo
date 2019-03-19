@@ -41,7 +41,7 @@ h1{
 }
 
 .content-box{
-  width: 80%;
+  width: 90%;
   margin: 20px auto 0;
 }
 </style>
